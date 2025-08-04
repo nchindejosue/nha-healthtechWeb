@@ -9,6 +9,7 @@ interface TeamMember {
   education?: string;
   location?: string;
   expertise: string[];
+  image?: string; // Add optional image property
 }
 
 interface TeamMemberCardProps {
@@ -19,8 +20,7 @@ interface TeamMemberCardProps {
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, isLeadership = false }) => {
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 }
+    animate: { opacity: 1, y: 0 }
   };
 
   return (
@@ -29,8 +29,16 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, isLeadership = 
       className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
     >
       <div className="relative">
-        <div className="w-full h-64 bg-gradient-to-br from-project-blue to-project-blue-light flex items-center justify-center">
-          <User className="w-24 h-24 text-white/80" />
+        <div className="w-full h-64 bg-gradient-to-br from-project-blue to-project-blue-light flex items-center justify-center overflow-hidden">
+          {member.image ? (
+            <img 
+              src={member.image} 
+              alt={member.name}
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <User className="w-24 h-24 text-white/80" />
+          )}
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
       </div>

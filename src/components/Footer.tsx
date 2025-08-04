@@ -20,18 +20,18 @@ const Footer = () => {
     {
       title: t('footer.solutions'),
       links: [
-        { name: 'Mi-Health', path: 'https://mi-healthapp.netlify.app/', external: true },
-        { name: 'NHA-Connect', path: '/solutions' },
-        { name: 'NHA-Clinic', path: '/solutions' },
+        { name: t('solutions.products.miHealth.title'), path: 'https://mi-healthapp.netlify.app/', external: true },
+        { name: t('solutions.products.nhaConnect.title'), path: '/solutions' },
+        { name: t('solutions.products.nhaClinic.title'), path: '/solutions' },
       ]
     },
     {
       title: t('footer.resources'),
       links: [
-        { name: 'Documentation', path: '#' },
-        { name: 'Support', path: '/contact' },
-        { name: 'Privacy Policy', path: '#' },
-        { name: 'Terms of Service', path: '#' },
+        { name: t('footer.documentation'), path: '#' },
+        { name: t('footer.support'), path: '/contact' },
+        { name: t('footer.privacyPolicy'), path: '#' },
+        { name: t('footer.termsOfService'), path: '#' },
       ]
     }
   ];

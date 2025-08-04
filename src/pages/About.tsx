@@ -131,7 +131,7 @@ const About = () => {
           >
             <div>
               <img
-                src="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/about-image.jpg"
                 alt="Healthcare Innovation"
                 className="rounded-2xl shadow-2xl"
               />

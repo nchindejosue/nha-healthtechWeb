@@ -38,16 +38,10 @@ const Solutions = () => {
     {
       id: 'mi-health',
       icon: Smartphone,
-      title: 'Mi-Health',
-      subtitle: 'Personal Health Records',
-      description: 'A secure, patient-controlled Personal Health Record (PHR) mobile application that serves as a lifelong, portable health passport.',
-      features: [
-        'Secure digital health records',
-        'Document upload with OCR',
-        'Guardian access for family',
-        'AI-powered health insights',
-        'QR code sharing with doctors'
-      ],
+      title: t('solutions.products.miHealth.title'),
+      subtitle: t('solutions.products.miHealth.subtitle'),
+      description: t('solutions.products.miHealth.description'),
+      features: t('solutions.products.miHealth.features'),
       color: 'from-project-blue to-project-blue-light',
       bgColor: 'from-blue-50 to-project-blue/10',
       link: 'https://mi-healthapp.netlify.app/'
@@ -55,16 +49,10 @@ const Solutions = () => {
     {
       id: 'nha-connect',
       icon: Globe,
-      title: 'NHA-Connect',
-      subtitle: 'Telehealth Platform',
-      description: 'A low-bandwidth, secure video consultation platform designed to connect patients with healthcare providers remotely.',
-      features: [
-        'Low-bandwidth video calls',
-        'Secure patient-provider communication',
-        'Appointment scheduling',
-        'Digital prescriptions',
-        'Remote monitoring capabilities'
-      ],
+      title: t('solutions.products.nhaConnect.title'),
+      subtitle: t('solutions.products.nhaConnect.subtitle'),
+      description: t('solutions.products.nhaConnect.description'),
+      features: t('solutions.products.nhaConnect.features'),
       color: 'from-blue-500 to-indigo-600',
       bgColor: 'from-blue-50 to-indigo-50',
       link: '/solutions'
@@ -72,16 +60,10 @@ const Solutions = () => {
     {
       id: 'nha-clinic',
       icon: Users,
-      title: 'NHA-Clinic',
-      subtitle: 'Practice Management & EHR',
-      description: 'A lightweight, cloud-based Electronic Health Record (EHR) and practice management solution for healthcare facilities.',
-      features: [
-        'Cloud-based EHR system',
-        'Patient management',
-        'Appointment scheduling',
-        'Billing and invoicing',
-        'Analytics and reporting'
-      ],
+      title: t('solutions.products.nhaClinic.title'),
+      subtitle: t('solutions.products.nhaClinic.subtitle'),
+      description: t('solutions.products.nhaClinic.description'),
+      features: t('solutions.products.nhaClinic.features'),
       color: 'from-purple-500 to-pink-600',
       bgColor: 'from-purple-50 to-pink-50',
       link: '/solutions'
@@ -91,66 +73,48 @@ const Solutions = () => {
   const techFeatures = [
     {
       icon: Shield,
-      title: 'Enterprise Security',
-      description: 'End-to-end encryption (AES-256) for data at rest and in transit (TLS 1.3)'
+      title: t('solutions.technology.security.title'),
+      description: t('solutions.technology.security.description')
     },
     {
       icon: Cloud,
-      title: 'Cloud-Native',
-      description: 'Built on Firebase for scalable, reliable, and cost-effective infrastructure'
+      title: t('solutions.technology.cloud.title'),
+      description: t('solutions.technology.cloud.description')
     },
     {
       icon: Zap,
-      title: 'AI-Powered',
-      description: 'Google Gemini API integration for intelligent health insights and automation'
+      title: t('solutions.technology.ai.title'),
+      description: t('solutions.technology.ai.description')
     },
     {
       icon: Wifi,
-      title: 'Low-Bandwidth Optimized',
-      description: 'Designed to work efficiently in areas with limited internet connectivity'
+      title: t('solutions.technology.bandwidth.title'),
+      description: t('solutions.technology.bandwidth.description')
     },
     {
       icon: Database,
-      title: 'Interoperable',
-      description: 'FHIR and HL7 compliant for seamless integration with existing systems'
+      title: t('solutions.technology.interoperable.title'),
+      description: t('solutions.technology.interoperable.description')
     },
     {
       icon: Lock,
-      title: 'Privacy-First',
-      description: 'Patient-controlled data with granular privacy settings and consent management'
+      title: t('solutions.technology.privacy.title'),
+      description: t('solutions.technology.privacy.description')
     }
   ];
 
   const benefits = [
     {
-      title: 'For Patients',
-      items: [
-        'Complete control over health data',
-        'Access records anytime, anywhere',
-        'Better care coordination',
-        'Reduced medical errors',
-        'Family health management'
-      ]
+      title: t('solutions.benefits.patients.title'),
+      items: t('solutions.benefits.patients.items')
     },
     {
-      title: 'For Healthcare Providers',
-      items: [
-        'Comprehensive patient histories',
-        'Streamlined workflows',
-        'Reduced administrative burden',
-        'Better patient outcomes',
-        'Improved efficiency'
-      ]
+      title: t('solutions.benefits.providers.title'),
+      items: t('solutions.benefits.providers.items')
     },
     {
-      title: 'For Healthcare Systems',
-      items: [
-        'Reduced costs',
-        'Better resource allocation',
-        'Improved population health',
-        'Data-driven insights',
-        'Enhanced quality of care'
-      ]
+      title: t('solutions.benefits.systems.title'),
+      items: t('solutions.benefits.systems.items')
     }
   ];
 
@@ -168,14 +132,13 @@ const Solutions = () => {
             className="text-center mb-16"
           >
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Our
+              {t('solutions.hero.title')}
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-project-blue to-project-blue-light">
-                Solution Suite
+                {t('solutions.hero.titleHighlight')}
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              We build an ecosystem, not just products. Our solutions are designed to be interoperable, 
-              ensuring that data can flow securely between patients and providers to create a holistic view of health.
+              {t('solutions.hero.subtitle')}
             </p>
           </motion.div>
         </div>
@@ -241,11 +204,7 @@ const Solutions = () => {
 
                 <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
                   <img
-                    src={`https://images.pexels.com/photos/${
-                      index === 0 ? '5327585' : index === 1 ? '5327585' : '5327585'
-                    }/pexels-photo-${
-                      index === 0 ? '5327585' : index === 1 ? '5327585' : '5327585'
-                    }.jpeg?auto=compress&cs=tinysrgb&w=800`}
+                    src={`/solutions/${solution.id}.jpg`}
                     alt={solution.title}
                     className="rounded-2xl shadow-2xl"
                   />
@@ -267,11 +226,10 @@ const Solutions = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Built on Modern Technology
+              {t('solutions.technology.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our solutions leverage cutting-edge technology to ensure security, scalability, 
-              and reliability while remaining accessible in resource-constrained environments.
+              {t('solutions.technology.subtitle')}
             </p>
           </motion.div>
 
@@ -310,11 +268,10 @@ const Solutions = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Benefits for Everyone
+              {t('solutions.benefits.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our integrated solution suite delivers value across the entire healthcare ecosystem, 
-              from individual patients to large healthcare systems.
+              {t('solutions.benefits.subtitle')}
             </p>
           </motion.div>
 
@@ -356,11 +313,10 @@ const Solutions = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ready to Experience the Future of Healthcare?
+              {t('solutions.cta.title')}
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Join our pilot program and be among the first to experience the next generation 
-              of digital health solutions designed specifically for Africa.
+              {t('solutions.cta.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -369,14 +325,14 @@ const Solutions = () => {
                 rel="noopener noreferrer"
                 className="bg-white text-project-blue px-8 py-4 rounded-full text-lg font-medium hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center justify-center"
               >
-                Try Mi-Health
+                {t('solutions.cta.tryMiHealth')}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
               <Link
                 to="/contact"
                 className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-white hover:text-project-blue transition-all duration-200 flex items-center justify-center"
               >
-                Contact Sales
+                {t('solutions.cta.contactSales')}
               </Link>
             </div>
           </motion.div>

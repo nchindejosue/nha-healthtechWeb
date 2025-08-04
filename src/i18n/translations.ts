@@ -30,7 +30,57 @@ export const translations = {
       },
       features: {
         title: 'Why Choose NHA-HEALTHTECH?',
-        subtitle: 'We\'re building the future of healthcare in Africa with cutting-edge technology and a deep understanding of local needs.'
+        subtitle: 'We\'re building the future of healthcare in Africa with cutting-edge technology and a deep understanding of local needs.',
+        secure: {
+          title: 'Secure & Private',
+          description: 'End-to-end encryption ensures your health data remains completely secure and private.'
+        },
+        mobile: {
+          title: 'Mobile-First',
+          description: 'Access your health records anytime, anywhere with our intuitive mobile application.'
+        },
+        family: {
+          title: 'Family Management',
+          description: 'Manage health records for your entire family from a single, convenient account.'
+        },
+        ai: {
+          title: 'AI-Powered Insights',
+          description: 'Get personalized health insights and recommendations powered by advanced AI.'
+        }
+      },
+      secureHealthRecords: {
+        title: 'Secure Health Records',
+        subtitle: 'Always accessible, always protected'
+      },
+      integratedSolutions: {
+        title: 'Our Integrated Solution Suite',
+        subtitle: 'From personal health records to telehealth and practice management, we provide comprehensive digital health solutions.',
+        miHealth: {
+          title: 'Mi-Health',
+          description: 'Your personal health passport. Secure, portable, and always accessible digital health records for you and your family.'
+        },
+        nhaConnect: {
+          title: 'NHA-Connect',
+          description: 'Bridge geographical barriers with our secure telehealth platform designed for low-bandwidth environments.'
+        },
+        nhaClinic: {
+          title: 'NHA-Clinic',
+          description: 'Streamline your practice with our lightweight, cloud-based EHR and practice management solution.'
+        }
+      },
+      stats: {
+        users: 'Early Access Users',
+        partners: 'Healthcare Partners',
+        security: 'Data Security',
+        support: 'Support Available'
+      },
+      testimonials: {
+        title: 'What Our Users Say',
+        subtitle: 'Hear from healthcare providers and patients who are already experiencing the benefits of our solutions.'
+      },
+      cta: {
+        title: 'Ready to Transform Your Healthcare Experience?',
+        subtitle: 'Join thousands of users who are already taking control of their health with our innovative digital solutions.'
       }
     },
     // About page
@@ -219,7 +269,216 @@ export const translations = {
       company: 'Company',
       solutions: 'Solutions',
       resources: 'Resources',
+      documentation: 'Documentation',
+      support: 'Support',
+      privacyPolicy: 'Privacy Policy',
+      termsOfService: 'Terms of Service',
       copyright: 'All rights reserved.'
+    },
+    // Team page translations
+    team: {
+      hero: {
+        title: 'Meet Our',
+        titleHighlight: 'Amazing Team',
+        subtitle: 'Our team is our greatest asset, combining deep medical insights with strong, multi-disciplinary technical expertise to transform healthcare in Africa.'
+      },
+      stats: {
+        members: 'Team Members',
+        experience: 'Years Combined Experience',
+        countries: 'Countries Represented',
+        excellence: 'Committed to Excellence'
+      },
+      leadership: {
+        title: 'Leadership Team',
+        subtitle: 'Visionary Leaders',
+        description: 'Our founders bring together medical expertise and technical innovation to drive our mission of transforming African healthcare.'
+      },
+      members: {
+        harmony: {
+          name: 'NJUKANG Harmony A.',
+          role: 'CEO & Co-Founder',
+          description: 'Sixth-Year Medical Student and HealthTech Innovator with a passion for transforming African healthcare through technology.',
+          education: 'Medical Student',
+          location: 'Yaoundé, Cameroon',
+          expertise: ['Healthcare Innovation', 'Medical Practice', 'Strategic Leadership', 'Product Vision']
+        },
+        josue: {
+          name: 'NCHINDE TANDJONG Josue',
+          role: 'CTO & Co-Founder',
+          description: 'Software/Computer Engineer and Mi-HEALTH Project Manager with extensive experience in healthcare technology solutions.',
+          education: 'Computer Engineering',
+          location: 'Yaoundé, Cameroon',
+          expertise: ['Software Architecture', 'Healthcare IT', 'Project Management', 'Technical Leadership']
+        },
+        keziah: {
+          name: 'CHING Keziah',
+          role: 'Software Engineer',
+          description: 'Full-stack developer specializing in mobile and web applications with a focus on user experience.',
+          expertise: ['Mobile Development', 'React/React Native', 'UI/UX Design', 'Database Management']
+        },
+        thierry: {
+          name: 'Thierry MESUMBE',
+          role: 'Software Engineer',
+          description: 'Backend specialist with expertise in cloud infrastructure and API development for healthcare systems.',
+          expertise: ['Backend Development', 'Cloud Architecture', 'API Design', 'Security Implementation']
+        },
+        favour: {
+          name: 'FONTEM Favour',
+          role: 'Software Engineer',
+          description: 'Frontend developer passionate about creating intuitive interfaces for healthcare applications.',
+          expertise: ['Frontend Development', 'JavaScript/TypeScript', 'Responsive Design', 'Performance Optimization']
+        },
+        ulrich: {
+          name: 'EMAMBOU Ulrich',
+          role: 'UI/UX Designer & Software Engineer',
+          description: 'Unique blend of design and engineering skills, ensuring our products are both beautiful and functional.',
+          expertise: ['UI/UX Design', 'Software Development', 'Design Systems', 'User Research']
+        },
+        willy: {
+          name: 'NJUNDONG Willy',
+          role: 'Senior Technical Advisor',
+          description: 'Senior Software Engineer based in Maryland, USA, providing strategic technical guidance and mentorship.',
+          location: 'Maryland, USA',
+          expertise: ['Software Architecture', 'Scalable Systems', 'Technical Strategy', 'Mentorship']
+        },
+        bill: {
+          name: 'Bill AGHA',
+          role: 'Strategic Consultant',
+          description: 'Founder & President of Tech Innovation Center (TIC) Foundation, bringing extensive startup and innovation experience.',
+          location: 'Cameroon',
+          expertise: ['Startup Strategy', 'Innovation Management', 'Business Development', 'Ecosystem Building']
+        }
+      },
+      developers: {
+        title: 'Development Team',
+        subtitle: 'Technical Experts',
+        description: 'Our skilled developers and designers work tirelessly to build innovative, secure, and user-friendly healthcare solutions.'
+      },
+      advisors: {
+        title: 'Advisory Board',
+        subtitle: 'Strategic Advisors',
+        description: 'Experienced mentors and advisors who guide our strategic direction and provide invaluable industry insights.'
+      },
+      cta: {
+        title: 'Want to Join Our Mission?',
+        subtitle: 'We\'re always looking for passionate individuals who share our vision of transforming healthcare in Africa. Join us in making a difference.',
+        positions: 'View Open Positions',
+        cv: 'Send Your CV'
+      }
+    },
+    // Solutions page translations
+    solutions: {
+      hero: {
+        title: 'Our',
+        titleHighlight: 'Solution Suite',
+        subtitle: 'We build an ecosystem, not just products. Our solutions are designed to be interoperable, ensuring that data can flow securely between patients and providers to create a holistic view of health.'
+      },
+      technology: {
+        title: 'Built on Modern Technology',
+        subtitle: 'Our solutions leverage cutting-edge technology to ensure security, scalability, and reliability while remaining accessible in resource-constrained environments.',
+        security: {
+          title: 'Enterprise Security',
+          description: 'End-to-end encryption (AES-256) for data at rest and in transit (TLS 1.3)'
+        },
+        cloud: {
+          title: 'Cloud-Native',
+          description: 'Built on Firebase for scalable, reliable, and cost-effective infrastructure'
+        },
+        ai: {
+          title: 'AI-Powered',
+          description: 'Google Gemini API integration for intelligent health insights and automation'
+        },
+        bandwidth: {
+          title: 'Low-Bandwidth Optimized',
+          description: 'Designed to work efficiently in areas with limited internet connectivity'
+        },
+        interoperable: {
+          title: 'Interoperable',
+          description: 'FHIR and HL7 compliant for seamless integration with existing systems'
+        },
+        privacy: {
+          title: 'Privacy-First',
+          description: 'Patient-controlled data with granular privacy settings and consent management'
+        }
+      },
+      benefits: {
+        title: 'Benefits for Everyone',
+        subtitle: 'Our integrated solution suite delivers value across the entire healthcare ecosystem, from individual patients to large healthcare systems.',
+        patients: {
+          title: 'For Patients',
+          items: [
+            'Complete control over health data',
+            'Access records anytime, anywhere',
+            'Better care coordination',
+            'Reduced medical errors',
+            'Family health management'
+          ]
+        },
+        providers: {
+          title: 'For Healthcare Providers',
+          items: [
+            'Comprehensive patient histories',
+            'Streamlined workflows',
+            'Reduced administrative burden',
+            'Better patient outcomes',
+            'Improved efficiency'
+          ]
+        },
+        systems: {
+          title: 'For Healthcare Systems',
+          items: [
+            'Reduced costs',
+            'Better resource allocation',
+            'Improved population health',
+            'Data-driven insights',
+            'Enhanced quality of care'
+          ]
+        }
+      },
+      products: {
+        miHealth: {
+          title: 'Mi-Health',
+          subtitle: 'Personal Health Records',
+          description: 'A secure, patient-controlled Personal Health Record (PHR) mobile application that serves as a lifelong, portable health passport.',
+          features: [
+            'Secure digital health records',
+            'Document upload with OCR',
+            'Guardian access for family',
+            'AI-powered health insights',
+            'QR code sharing with doctors'
+          ]
+        },
+        nhaConnect: {
+          title: 'NHA-Connect',
+          subtitle: 'Telehealth Platform',
+          description: 'A low-bandwidth, secure video consultation platform designed to connect patients with healthcare providers remotely.',
+          features: [
+            'Low-bandwidth video calls',
+            'Secure patient-provider communication',
+            'Appointment scheduling',
+            'Digital prescriptions',
+            'Remote monitoring capabilities'
+          ]
+        },
+        nhaClinic: {
+          title: 'NHA-Clinic',
+          subtitle: 'Practice Management & EHR',
+          description: 'A lightweight, cloud-based Electronic Health Record (EHR) and practice management solution for healthcare facilities.',
+          features: [
+            'Cloud-based EHR system',
+            'Patient management',
+            'Appointment scheduling',
+            'Billing and invoicing',
+            'Analytics and reporting'
+          ]
+        }
+      },
+      cta: {
+        title: 'Ready to Experience the Future of Healthcare?',
+        subtitle: 'Join our pilot program and be among the first to experience the next generation of digital health solutions designed specifically for Africa.',
+        tryMiHealth: 'Try Mi-Health',
+        contactSales: 'Contact Sales'
+      }
     }
   },
   fr: {
@@ -253,7 +512,57 @@ export const translations = {
       },
       features: {
         title: 'Pourquoi Choisir NHA-HEALTHTECH?',
-        subtitle: 'Nous construisons l\'avenir des soins de santé en Afrique avec une technologie de pointe et une compréhension approfondie des besoins locaux.'
+        subtitle: 'Nous construisons l\'avenir des soins de santé en Afrique avec une technologie de pointe et une compréhension approfondie des besoins locaux.',
+        secure: {
+          title: 'Sécurisé et Privé',
+          description: 'Le chiffrement de bout en bout garantit que vos données de santé restent complètement sécurisées et privées.'
+        },
+        mobile: {
+          title: 'Mobile-First',
+          description: 'Accédez à vos dossiers de santé à tout moment, n\'importe où avec notre application mobile intuitive.'
+        },
+        family: {
+          title: 'Gestion Familiale',
+          description: 'Gérez les dossiers de santé de toute votre famille à partir d\'un seul compte pratique.'
+        },
+        ai: {
+          title: 'Insights Alimentés par l\'IA',
+          description: 'Obtenez des insights de santé personnalisés et des recommandations alimentés par une IA avancée.'
+        }
+      },
+      secureHealthRecords: {
+        title: 'Dossiers de Santé Sécurisés',
+        subtitle: 'Toujours accessible, toujours protégé'
+      },
+      integratedSolutions: {
+        title: 'Notre Suite de Solutions Intégrées',
+        subtitle: 'Des dossiers de santé personnels à la télésanté et à la gestion de cabinet, nous fournissons des solutions de santé numériques complètes.',
+        miHealth: {
+          title: 'Mi-Health',
+          description: 'Votre passeport santé personnel. Dossiers de santé numériques sécurisés, portables et toujours accessibles pour vous et votre famille.'
+        },
+        nhaConnect: {
+          title: 'NHA-Connect',
+          description: 'Combler les barrières géographiques avec notre plateforme de télésanté sécurisée conçue pour les environnements à faible bande passante.'
+        },
+        nhaClinic: {
+          title: 'NHA-Clinic',
+          description: 'Rationalisez votre pratique avec notre solution légère de DSE et de gestion de cabinet basée sur le cloud.'
+        }
+      },
+      stats: {
+        users: 'Utilisateurs en Accès Anticipé',
+        partners: 'Partenaires de Santé',
+        security: 'Sécurité des Données',
+        support: 'Support Disponible'
+      },
+      testimonials: {
+        title: 'Ce que Disent Nos Utilisateurs',
+        subtitle: 'Écoutez les prestataires de soins de santé et les patients qui expérimentent déjà les avantages de nos solutions.'
+      },
+      cta: {
+        title: 'Prêt à Transformer Votre Expérience de Soins de Santé?',
+        subtitle: 'Rejoignez des milliers d\'utilisateurs qui prennent déjà le contrôle de leur santé avec nos solutions numériques innovantes.'
       }
     },
     // About page
@@ -442,7 +751,216 @@ export const translations = {
       company: 'Entreprise',
       solutions: 'Solutions',
       resources: 'Ressources',
+      documentation: 'Documentation',
+      support: 'Support',
+      privacyPolicy: 'Politique de Confidentialité',
+      termsOfService: 'Conditions d\'Utilisation',
       copyright: 'Tous droits réservés.'
+    },
+    // Team page French translations
+    team: {
+      hero: {
+        title: 'Rencontrer Notre',
+        titleHighlight: 'Équipe Incroyable',
+        subtitle: 'Notre équipe est notre plus grand atout, combinant des connaissances médicales approfondies avec une forte expertise technique multidisciplinaire pour transformer les soins de santé en Afrique.'
+      },
+      stats: {
+        members: 'Membres de l\'Équipe',
+        experience: 'Années d\'Expérience Combinée',
+        countries: 'Pays Représentés',
+        excellence: 'Engagés à l\'Excellence'
+      },
+      leadership: {
+        title: 'Équipe de Direction',
+        subtitle: 'Dirigeants Visionnaires',
+        description: 'Nos fondateurs réunissent l\'expertise médicale et l\'innovation technique pour conduire notre mission de transformation des soins de santé africains.'
+      },
+      members: {
+        harmony: {
+          name: 'NJUKANG Harmony A.',
+          role: 'PDG & Co-Fondateur',
+          description: 'Étudiant en médecine de sixième année et innovateur HealthTech avec une passion pour transformer les soins de santé africains grâce à la technologie.',
+          education: 'Étudiant en Médecine',
+          location: 'Yaoundé, Cameroun',
+          expertise: ['Innovation en Santé', 'Pratique Médicale', 'Leadership Stratégique', 'Vision Produit']
+        },
+        josue: {
+          name: 'NCHINDE TANDJONG Josue',
+          role: 'CTO & Co-Fondateur',
+          description: 'Ingénieur Logiciel/Informatique et Chef de Projet Mi-HEALTH avec une vaste expérience dans les solutions technologiques de santé.',
+          education: 'Ingénierie Informatique',
+          location: 'Yaoundé, Cameroun',
+          expertise: ['Architecture Logicielle', 'IT de Santé', 'Gestion de Projet', 'Leadership Technique']
+        },
+        keziah: {
+          name: 'CHING Keziah',
+          role: 'Ingénieur Logiciel',
+          description: 'Développeur full-stack spécialisé dans les applications mobiles et web avec un accent sur l\'expérience utilisateur.',
+          expertise: ['Développement Mobile', 'React/React Native', 'Conception UI/UX', 'Gestion de Base de Données']
+        },
+        thierry: {
+          name: 'Thierry MESUMBE',
+          role: 'Ingénieur Logiciel',
+          description: 'Spécialiste backend avec expertise en infrastructure cloud et développement d\'API pour les systèmes de santé.',
+          expertise: ['Développement Backend', 'Architecture Cloud', 'Conception API', 'Implémentation de Sécurité']
+        },
+        favour: {
+          name: 'FONTEM Favour',
+          role: 'Ingénieur Logiciel',
+          description: 'Développeur frontend passionné par la création d\'interfaces intuitives pour les applications de santé.',
+          expertise: ['Développement Frontend', 'JavaScript/TypeScript', 'Design Responsive', 'Optimisation des Performances']
+        },
+        ulrich: {
+          name: 'EMAMBOU Ulrich',
+          role: 'Designer UI/UX & Ingénieur Logiciel',
+          description: 'Mélange unique de compétences en design et ingénierie, garantissant que nos produits sont à la fois beaux et fonctionnels.',
+          expertise: ['Design UI/UX', 'Développement Logiciel', 'Systèmes de Design', 'Recherche Utilisateur']
+        },
+        willy: {
+          name: 'NJUNDONG Willy',
+          role: 'Conseiller Technique Senior',
+          description: 'Ingénieur Logiciel Senior basé au Maryland, USA, fournissant des conseils techniques stratégiques et du mentorat.',
+          location: 'Maryland, USA',
+          expertise: ['Architecture Logicielle', 'Systèmes Évolutifs', 'Stratégie Technique', 'Mentorat']
+        },
+        bill: {
+          name: 'Bill AGHA',
+          role: 'Consultant Stratégique',
+          description: 'Fondateur et Président de la Fondation Tech Innovation Center (TIC), apportant une vaste expérience en startup et innovation.',
+          location: 'Cameroun',
+          expertise: ['Stratégie Startup', 'Gestion de l\'Innovation', 'Développement Commercial', 'Construction d\'Écosystème']
+        }
+      },
+      developers: {
+        title: 'Équipe de Développement',
+        subtitle: 'Experts Techniques',
+        description: 'Nos développeurs et designers qualifiés travaillent sans relâche pour construire des solutions de santé innovantes, sécurisées et conviviales.'
+      },
+      advisors: {
+        title: 'Conseil Consultatif',
+        subtitle: 'Conseillers Stratégiques',
+        description: 'Des mentors et conseillers expérimentés qui guident notre direction stratégique et fournissent des insights inestimables de l\'industrie.'
+      },
+      cta: {
+        title: 'Voulez-vous Rejoindre Notre Mission?',
+        subtitle: 'Nous cherchons toujours des individus passionnés qui partagent notre vision de transformer les soins de santé en Afrique. Rejoignez-nous pour faire une différence.',
+        positions: 'Voir les Postes Ouverts',
+        cv: 'Envoyer Votre CV'
+      }
+    },
+    // Solutions page French translations
+    solutions: {
+      hero: {
+        title: 'Notre',
+        titleHighlight: 'Suite de Solutions',
+        subtitle: 'Nous construisons un écosystème, pas seulement des produits. Nos solutions sont conçues pour être interopérables, garantissant que les données peuvent circuler en toute sécurité entre les patients et les prestataires pour créer une vue holistique de la santé.'
+      },
+      technology: {
+        title: 'Construit sur une Technologie Moderne',
+        subtitle: 'Nos solutions exploitent une technologie de pointe pour assurer la sécurité, la scalabilité et la fiabilité tout en restant accessibles dans des environnements à ressources limitées.',
+        security: {
+          title: 'Sécurité d\'Entreprise',
+          description: 'Chiffrement de bout en bout (AES-256) pour les données au repos et en transit (TLS 1.3)'
+        },
+        cloud: {
+          title: 'Cloud-Natif',
+          description: 'Construit sur Firebase pour une infrastructure évolutive, fiable et rentable'
+        },
+        ai: {
+          title: 'Alimenté par l\'IA',
+          description: 'Intégration API Google Gemini pour des insights de santé intelligents et l\'automatisation'
+        },
+        bandwidth: {
+          title: 'Optimisé Faible Bande Passante',
+          description: 'Conçu pour fonctionner efficacement dans les zones à connectivité internet limitée'
+        },
+        interoperable: {
+          title: 'Interopérable',
+          description: 'Conforme FHIR et HL7 pour une intégration transparente avec les systèmes existants'
+        },
+        privacy: {
+          title: 'Confidentialité d\'Abord',
+          description: 'Données contrôlées par le patient avec des paramètres de confidentialité granulaires et la gestion du consentement'
+        }
+      },
+      benefits: {
+        title: 'Avantages pour Tout le Monde',
+        subtitle: 'Notre suite de solutions intégrées apporte de la valeur à travers tout l\'écosystème de santé, des patients individuels aux grands systèmes de santé.',
+        patients: {
+          title: 'Pour les Patients',
+          items: [
+            'Contrôle complet des données de santé',
+            'Accès aux dossiers à tout moment, n\'importe où',
+            'Meilleure coordination des soins',
+            'Erreurs médicales réduites',
+            'Gestion de la santé familiale'
+          ]
+        },
+        providers: {
+          title: 'Pour les Prestataires de Soins',
+          items: [
+            'Antécédents patients complets',
+            'Flux de travail rationalisés',
+            'Charge administrative réduite',
+            'Meilleurs résultats patients',
+            'Efficacité améliorée'
+          ]
+        },
+        systems: {
+          title: 'Pour les Systèmes de Santé',
+          items: [
+            'Coûts réduits',
+            'Meilleure allocation des ressources',
+            'Santé de la population améliorée',
+            'Insights basés sur les données',
+            'Qualité des soins améliorée'
+          ]
+        }
+      },
+      products: {
+        miHealth: {
+          title: 'Mi-Health',
+          subtitle: 'Dossiers de Santé Personnels',
+          description: 'Une application mobile sécurisée de Dossier de Santé Personnel (DSP) contrôlée par le patient qui sert de passeport de santé portable à vie.',
+          features: [
+            'Dossiers de santé numériques sécurisés',
+            'Téléchargement de documents avec OCR',
+            'Accès gardien pour la famille',
+            'Insights de santé alimentés par l\'IA',
+            'Partage QR code avec les médecins'
+          ]
+        },
+        nhaConnect: {
+          title: 'NHA-Connect',
+          subtitle: 'Plateforme de Télésanté',
+          description: 'Une plateforme de consultation vidéo sécurisée à faible bande passante conçue pour connecter les patients aux prestataires de soins à distance.',
+          features: [
+            'Appels vidéo à faible bande passante',
+            'Communication sécurisée patient-prestataire',
+            'Planification de rendez-vous',
+            'Prescriptions numériques',
+            'Capacités de surveillance à distance'
+          ]
+        },
+        nhaClinic: {
+          title: 'NHA-Clinic',
+          subtitle: 'Gestion de Cabinet & DSE',
+          description: 'Une solution légère de Dossier de Santé Électronique (DSE) et de gestion de cabinet basée sur le cloud pour les établissements de santé.',
+          features: [
+            'Système DSE basé sur le cloud',
+            'Gestion des patients',
+            'Planification de rendez-vous',
+            'Facturation et devis',
+            'Analyses et rapports'
+          ]
+        }
+      },
+      cta: {
+        title: 'Prêt à Expérimenter l\'Avenir des Soins de Santé?',
+        subtitle: 'Rejoignez notre programme pilote et soyez parmi les premiers à expérimenter la prochaine génération de solutions de santé numériques conçues spécifiquement pour l\'Afrique.',
+        tryMiHealth: 'Essayer Mi-Health',
+        contactSales: 'Contacter les Ventes'
+      }
     }
   }
 };

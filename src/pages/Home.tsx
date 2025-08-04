@@ -35,31 +35,31 @@ const Home = () => {
   const features = [
     {
       icon: Shield,
-      title: 'Secure & Private',
-      description: 'End-to-end encryption ensures your health data remains completely secure and private.'
+      title: t('home.features.secure.title'),
+      description: t('home.features.secure.description')
     },
     {
       icon: Smartphone,
-      title: 'Mobile-First',
-      description: 'Access your health records anytime, anywhere with our intuitive mobile application.'
+      title: t('home.features.mobile.title'),
+      description: t('home.features.mobile.description')
     },
     {
       icon: Users,
-      title: 'Family Management',
-      description: 'Manage health records for your entire family from a single, convenient account.'
+      title: t('home.features.family.title'),
+      description: t('home.features.family.description')
     },
     {
       icon: Heart,
-      title: 'AI-Powered Insights',
-      description: 'Get personalized health insights and recommendations powered by advanced AI.'
+      title: t('home.features.ai.title'),
+      description: t('home.features.ai.description')
     }
   ];
 
   const stats = [
-    { number: '500+', label: 'Early Access Users' },
-    { number: '5+', label: 'Healthcare Partners' },
-    { number: '99.9%', label: 'Data Security' },
-    { number: '24/7', label: 'Support Available' }
+    { number: '500+', label: t('home.stats.users') },
+    { number: '5+', label: t('home.stats.partners') },
+    { number: '99.9%', label: t('home.stats.security') },
+    { number: '24/7', label: t('home.stats.support') }
   ];
 
   const testimonials = [
@@ -154,8 +154,8 @@ const Home = () => {
                       <CheckCircle className="w-6 h-6 text-green-600" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-900">Secure Health Records</p>
-                      <p className="text-sm text-gray-600">Always accessible, always protected</p>
+                      <p className="font-semibold text-gray-900">{t('home.secureHealthRecords.title')}</p>
+                      <p className="text-sm text-gray-600">{t('home.secureHealthRecords.subtitle')}</p>
                     </div>
                   </div>
                 </div>
@@ -244,11 +244,10 @@ const Home = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Integrated Solution Suite
+              {t('home.integratedSolutions.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From personal health records to telehealth and practice management, 
-              we provide comprehensive digital health solutions.
+              {t('home.integratedSolutions.subtitle')}
             </p>
           </motion.div>
 
@@ -263,10 +262,9 @@ const Home = () => {
               <div className="w-16 h-16 bg-project-blue rounded-2xl flex items-center justify-center mb-6">
                 <Smartphone className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Mi-Health</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">{t('home.integratedSolutions.miHealth.title')}</h3>
               <p className="text-gray-600 mb-6">
-                Your personal health passport. Secure, portable, and always accessible 
-                digital health records for you and your family.
+                {t('home.integratedSolutions.miHealth.description')}
               </p>
               <a
                 href="https://mi-healthapp.netlify.app/"
@@ -289,10 +287,9 @@ const Home = () => {
               <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-6">
                 <Globe className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">NHA-Connect</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">{t('home.integratedSolutions.nhaConnect.title')}</h3>
               <p className="text-gray-600 mb-6">
-                Bridge geographical barriers with our secure telehealth platform 
-                designed for low-bandwidth environments.
+                {t('home.integratedSolutions.nhaConnect.description')}
               </p>
               <Link
                 to="/solutions"
@@ -313,10 +310,9 @@ const Home = () => {
               <div className="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mb-6">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">NHA-Clinic</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">{t('home.integratedSolutions.nhaClinic.title')}</h3>
               <p className="text-gray-600 mb-6">
-                Streamline your practice with our lightweight, cloud-based EHR 
-                and practice management solution.
+                {t('home.integratedSolutions.nhaClinic.description')}
               </p>
               <Link
                 to="/solutions"
@@ -340,10 +336,10 @@ const Home = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              What People Are Saying
+              {t('home.testimonials.title')}
             </h2>
             <p className="text-xl text-gray-600">
-              Hear from healthcare providers and patients who are already experiencing the future of healthcare.
+              {t('home.testimonials.subtitle')}
             </p>
           </motion.div>
 
@@ -386,11 +382,10 @@ const Home = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ready to Transform Your Healthcare Experience?
+              {t('home.cta.title')}
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Join thousands of users who are already taking control of their health 
-              with our innovative digital solutions.
+              {t('home.cta.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
